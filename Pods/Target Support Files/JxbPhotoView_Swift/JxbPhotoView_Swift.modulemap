@@ -1,6 +1,0 @@
-framework module JxbPhotoView_Swift {
-  umbrella header "JxbPhotoView_Swift-umbrella.h"
-
-  export *
-  module * { export * }
-}
