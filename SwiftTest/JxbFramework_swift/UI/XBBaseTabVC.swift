@@ -44,7 +44,7 @@ class XBBaseTabVC: UITabBarController {
         for item in items {
             let vc:UIViewController = item.root
             vc.tabBarItem = UITabBarItem.init(title: item.title, image: UIImage.init(named: item.unselectImage), selectedImage: UIImage.init(named: item.selectImage))
-            let nav:UINavigationController = UINavigationController.init(rootViewController: item.root)
+            let nav: XBBaseNavVC = XBBaseNavVC.init(rootViewController: item.root)
             arrVCS.addObject(nav)
         }
         self.viewControllers = arrVCS as NSArray as? [UIViewController]

@@ -1,13 +1,37 @@
 PODS:
   - Alamofire (3.3.1)
   - EVReflection (2.24.0)
+  - JxbPhotoView_Swift (1.0):
+    - Kingfisher
+  - Kingfisher (2.2.2)
+  - ReactiveCocoa (4.1.0):
+    - ReactiveCocoa/UI (= 4.1.0)
+    - Result (~> 2.0)
+  - ReactiveCocoa/Core (4.1.0):
+    - ReactiveCocoa/no-arc
+    - Result (~> 2.0)
+  - ReactiveCocoa/no-arc (4.1.0):
+    - Result (~> 2.0)
+  - ReactiveCocoa/UI (4.1.0):
+    - ReactiveCocoa/Core
+    - Result (~> 2.0)
+  - Result (2.0.0)
+  - SnapKit (0.20.0)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3.1)
   - EVReflection (~> 2.24.0)
+  - JxbPhotoView_Swift (~> 1.0)
+  - ReactiveCocoa (~> 4.1.0)
+  - SnapKit (~> 0.20.0)
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   EVReflection: 1dbb41847798d88ab625007a6a311f28a5d71d86
+  JxbPhotoView_Swift: 91e859de68219bdffbc354950f9bda28f7a5b611
+  Kingfisher: 7e8de5b0cf7b5dc8ec559d193029a0859df93ef1
+  ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
+  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
 
 COCOAPODS: 0.39.0

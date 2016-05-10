@@ -26,17 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let item2:XBTabItem = XBTabItem()
         item2.title = "hello2"
-        item2.root = UIViewController()
+        item2.root = ViewController()
         item2.selectImage = "icon1_s"
         item2.unselectImage = "icon1_u"
-        
+  
         arr.addObject(item1)
         arr.addObject(item2)
         
         let tab:XBBaseTabVC = XBBaseTabVC.initWithItems(arr)
         
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-        self.window?.backgroundColor = UIColor.blueColor()
+        self.window?.backgroundColor = UIColor.whiteColor()
         self.window?.becomeKeyWindow()
         self.window?.makeKeyAndVisible()
         

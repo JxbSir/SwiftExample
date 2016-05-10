@@ -86,8 +86,18 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/EVReflection.framework"
+  install_framework "Pods/JxbPhotoView_Swift.framework"
+  install_framework "Pods/Kingfisher.framework"
+  install_framework "Pods/ReactiveCocoa.framework"
+  install_framework "Pods/Result.framework"
+  install_framework "Pods/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/EVReflection.framework"
+  install_framework "Pods/JxbPhotoView_Swift.framework"
+  install_framework "Pods/Kingfisher.framework"
+  install_framework "Pods/ReactiveCocoa.framework"
+  install_framework "Pods/Result.framework"
+  install_framework "Pods/SnapKit.framework"
 fi

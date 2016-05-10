@@ -14,7 +14,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JxbPhotoView_Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Result.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,7 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4DF9819CB4C91B276F8A6B3AB7E4A592</key>
+		<key>595971D5AA4E10595829116B4A6D1BC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +57,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>74FEE61C155EDC520356CCAFC137FBF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>96279FCC6432C8BFDFAE08511334CE52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>98ECB3149836F6E825BE5DA1ADF4DC6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CCA50B96717D507F952B299E6B59F4E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F7A8796866265CFE281C975DEEFB0D51</key>
 		<dict>
 			<key>primary</key>
 			<true/>
