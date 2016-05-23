@@ -12,7 +12,7 @@ typealias btnClickAction = ()->Void
 private var keyButtonAction: NSString = "keyButtonAction"
 private let navButtonColor: UIColor = UIColor.blackColor()
 
-class XBBaseVC: UIViewController {
+class XBBaseVC: UIViewController,UIGestureRecognizerDelegate {
     
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
@@ -28,6 +28,18 @@ class XBBaseVC: UIViewController {
         super.viewWillAppear(animated)
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let count = self.navigationController?.viewControllers.count
+        self.navigationController?.interactivePopGestureRecognizer?.enabled = count > 1
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+    }
+    
+    @objc func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return self.navigationController?.viewControllers.count > 1
+    }
+   
     //MARK: private
     private var navLeftBtn: UIButton?, navRightBtn: UIButton?
     private var leftAction: btnClickAction?, rightAction: btnClickAction?
