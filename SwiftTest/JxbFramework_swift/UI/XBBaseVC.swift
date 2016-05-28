@@ -14,14 +14,20 @@ private let navButtonColor: UIColor = UIColor.blackColor()
 
 class XBBaseVC: UIViewController,UIGestureRecognizerDelegate {
     
+    var disableGesture: Bool = false
+    
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
         print("class[" + self.description + "] deinit success")
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
+        
+        self.extendedLayoutIncludesOpaqueBars = false
+        self.edgesForExtendedLayout = UIRectEdge.None
+        self.modalPresentationCapturesStatusBarAppearance = true
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -37,7 +43,7 @@ class XBBaseVC: UIViewController,UIGestureRecognizerDelegate {
     }
     
     @objc func gestureRecognizerShouldBegin(gestureRecognizer: UIGestureRecognizer) -> Bool {
-        return self.navigationController?.viewControllers.count > 1
+        return self.navigationController?.viewControllers.count > 1 && !disableGesture
     }
    
     //MARK: private
@@ -89,6 +95,7 @@ class XBBaseVC: UIViewController,UIGestureRecognizerDelegate {
         navLeftBtn = UIButton.init(type: UIButtonType.Custom)
         navLeftBtn?.backgroundColor = UIColor.clearColor()
         navLeftBtn?.frame = CGRectMake(0, 0, 48, 48)
+        navLeftBtn?.hidden = btnAction == nil
         self.leftAction = btnAction
         self.actionCustomNavBtn(navLeftBtn!, title: title, normalImage: normalImage, highlightImage: highlightImage)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: navLeftBtn!)
